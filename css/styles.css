@@ -12,8 +12,8 @@
     --white: #FFFFFF;
     --dark-background: #2F303A;
     --light-background: #F5F4FA;
-   
-}
+    --social-icon:#afb1b8;
+    }
 .list {
     padding: 0;
     margin: 0;
@@ -109,6 +109,7 @@ text-decoration: none;
 .site-nav a:focus {
    color: var(--accent-color);
 }
+
 .active-page {
     color: var(--accent-color);
 }
@@ -129,10 +130,32 @@ letter-spacing: 0.02em;
 color: var(--text-color);
 text-decoration: none;
 }
+
+.connection-email:hover .connection-icon,
+.connection-email:focus .connection-icon,
+.connection-tel:hover .connection-icon,
+.connection-tel:focus .connection-icon {
+    fill: var(--accent-color);
+}
 .connection a:hover, 
 .connection a:focus {
     color: var(--accent-color);
 }
+
+.connection-icon {
+    padding: 0;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+/*.connection-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--text-color);
+}*/
+
 
 /* Title */
 .title {
@@ -214,9 +237,9 @@ h3 {
 
  .principlist {
      display: flex;
-     
-    }
+     }
 .principlist-subtitle {
+    
     display: block;
     width: 270px;
        }
@@ -226,6 +249,15 @@ h3 {
 .principlist .foto-list+.foto-list {
     margin-left: 30px;
 }
+.icon-box {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(245, 244, 250, 1);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;   
+}
+
 /*Наша команда*/
 img {
 display: block;
@@ -236,7 +268,7 @@ height: auto;
     background-color: var(--light-background);
 }
 .team-list {
-    display: block;
+    display: block; 
         }
 .principlist .team-list+.team-list {
     margin-left: 30px;
@@ -267,6 +299,38 @@ text-align: center;
     line-height: 1.18;
     text-align: center;
     }
+.social-group {
+        display: flex;
+        justify-content:center;
+        margin-top: 16px;
+    }
+.social-group .icon-list+.icon-list {
+        margin-left: 10px;
+    }
+.social-link {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       height: 44px;
+       width: 44px;
+       fill: var(--text-color);
+       border-radius: 50%;
+    }
+    .icon {
+        fill: var(--social-icon);
+    }
+.social-link:hover .icon,
+.social-link:focus .icon {
+    fill: var(--white);
+    } 
+    .social-link:hover .icon,
+    .social-link:focus .icon {
+    background-color: var(--accent-color);
+    } 
+     
+
+
+
 /* Footer */
 footer {
             background-color: var(--dark-background);
