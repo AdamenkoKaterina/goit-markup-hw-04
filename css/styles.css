@@ -53,8 +53,7 @@ letter-spacing: 0.03em;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  /*background-color: yellow;*/
-    }
+     }
   
     
   
@@ -358,6 +357,10 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-container {
+    display: flex;
+
+}
 .logo-footer {
     display: block;
     margin-bottom: 20px;
@@ -389,6 +392,49 @@ text-decoration: none;
     display: block; 
     margin-bottom: 9px;
 }
+.networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.networks-list {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    justify-content:center;
+    align-items: center;
+    
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+.networks-icon {
+   fill: var(--white);
+   justify-content:center;
+    align-items: center;
+ }
+.networks .networks-list+.networks-list {
+    margin-left: 10px;
+}
+ .networks-link:hover .networks-icon,
+ .networks-link:focus .networks-icon {
+     background-color: var(--accent-color);
+ }
+  .networks-list:hover,
+ .networks-list:focus {
+     background-color: var(--accent-color);
+ }
+.networks-title {
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.17;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.networks-box {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
 
 /* ПОРТФОЛИО*/
 
@@ -418,6 +464,7 @@ button:hover,
 button:focus {
     color: var(--white);
     background: var(--accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .progect {
     display: flex;
@@ -430,7 +477,11 @@ button:focus {
     margin-right: 30px;
     margin-bottom: 30px;
     }
-.item-border {
+.item:hover,
+.item:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+    .item-border {
     padding: 20px 24px;
     border-right: 1px solid rgba(238, 238, 238, 1);
     border-bottom: 1px solid rgba(238, 238, 238, 1);
@@ -467,10 +518,4 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 }*/
-
-. {
-    color: var(--text-color);
-    font-size: 16px;
-line-height: 1.9;
-}
 
