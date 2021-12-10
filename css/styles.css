@@ -328,9 +328,27 @@ text-align: center;
     .social-link:focus {
     background-color: var(--accent-color);
     } 
-     
+  
+    /*Постоянные клиенты*/
+    .client-list {
+       display: flex;
+        justify-content:center;
+        align-items: center;
+       height: 92px;
+       width: 170px;
+       fill: var(--text-color);
+       border: 1px solid rgba(175, 177, 184, 1);
+       border-radius: 4px; 
+    }
+.principlist .client-list+.client-list {
+    margin-left: 30px;
+}
 
-
+.client-list:hover,
+.client-list:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
 
 /* Footer */
 footer {
@@ -386,7 +404,6 @@ text-decoration: none;
 padding: 6px 22px;
 border: none;
 border-radius: 4px;
-
 font-family: Roboto;   
  cursor: pointer;
  color: var(--black);
