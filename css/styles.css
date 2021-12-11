@@ -250,10 +250,11 @@ h3 {
 }
 .icon-box {
     display: flex;
+    height: 120px;
+    width: 270px;
     justify-content: center;
+    align-items: center;
     background-color: rgba(245, 244, 250, 1);
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin-bottom: 30px;   
 }
 
@@ -329,7 +330,7 @@ text-align: center;
     } 
   
     /*Постоянные клиенты*/
-    .client-list {
+    .client {
        display: flex;
         justify-content:center;
         align-items: center;
@@ -343,8 +344,8 @@ text-align: center;
     margin-left: 30px;
 }
 
-.client-list:hover,
-.client-list:focus {
+.client:hover,
+.client:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
@@ -395,22 +396,21 @@ text-decoration: none;
 .networks {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
    }
-.networks-list {
+.networks-link {
     display: flex;
     height: 44px;
     width: 44px;
     justify-content:center;
     align-items: center;
-    
     background-color: var(--text-color);
     border-radius: 50%;
 }
 .networks-icon {
    fill: var(--white);
    justify-content:center;
-    align-items: center;
+   align-items: center;
  }
 .networks .networks-list+.networks-list {
     margin-left: 10px;
@@ -419,8 +419,8 @@ text-decoration: none;
  .networks-link:focus .networks-icon {
      background-color: var(--accent-color);
  }
-  .networks-list:hover,
- .networks-list:focus {
+  .networks-link:hover,
+  .networks-link:focus {
      background-color: var(--accent-color);
  }
 .networks-title {
